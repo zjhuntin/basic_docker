@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+  web:
+    links:
+      - db
+    image: test
+    ports:
+      - "8000:80"
+    tty: true
