@@ -7,7 +7,7 @@ services:
   web:
     links:
       - db
-    image: test
+    build: .
     ports:
       - "8000:80"
     tty: true
