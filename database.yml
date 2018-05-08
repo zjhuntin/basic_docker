@@ -1,8 +1,18 @@
 test: &default
   adapter: postgresql
   encoding: unicode
-  database: postgres
+  database: foreman-test
   pool: 5
   username: postgres
   password:
   host: db
+
+development: &default
+  adapter: postgresql
+  encoding: unicode
+  database: foreman-dev
+  pool: 5
+  username: postgres
+  password:
+  host: db
+
