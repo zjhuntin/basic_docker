@@ -15,4 +15,3 @@ development: &default
   username: postgres
   password:
   host: db
-
